@@ -4,55 +4,15 @@
     gap: 10px;
   }
 
-details {
+details{
     position: relative;
-    min-width: 200px;
+    min-width: 100px;
     transition: all 0.3s ease;
   }
 
 details[open] {
-    flex-grow: 1;
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    width: 300px;
   }
 
-summary {
-    list-style: none;
-    cursor: pointer;
-  }
-
-summary::-webkit-details-marker {
-    display: none;
-  }
-
-summary img {
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
-    display: block;
-  }
-
-details div {
-    padding: 20px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-details[open] div {
-    opacity: 1;
-  }
-
-details[open] div {
-    animation: slideIn 0.3s ease forwards;
-  }
-
-@keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
